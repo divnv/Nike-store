@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@500;600;700&family=Open+Sans:wght@600;800&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: unset;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #EEEDF0;
+}
+
+.container {
+  max-width: 1330px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 76px;
+  font-weight: 700;
+  color: #EEEDF0;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__item + .nav__item {
+  margin-left: 32px;
+}
+
+.nav__link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: #EEEDF0;
+}
+
+.main {
+  padding-bottom: 110px;
+  background-color: #17181F;
+}
+
+.main__container {
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  padding: 55px 0;
+  margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  width: 142px;
+  height: 50px;
+  display: inline-block;
+  background-image: url("../img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons__item {
+  width: 36px;
+  height: 36px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.buttons__item + .buttons__item {
+  margin-left: 20px;
+}
+
+.buttons__item--search {
+  background-image: url("../img/search.png");
+}
+
+.buttons__item--account {
+  background-image: url("../img/account.png");
+}
+
+.sneaker {
+  position: relative;
+  text-align: center;
+}
+
+.sneaker__title {
+  margin-bottom: 36px;
+  color: rgba(238, 237, 240, 0.85);
+  position: relative;
+  z-index: 100;
+}
+
+.sneaker__bg-titile {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 278px;
+  font-weight: 700;
+  letter-spacing: 120px;
+  text-transform: uppercase;
+  color: rgba(238, 237, 240, 0.1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-bottom: 78px;
+}
+
+.sneaker__bg-titile span {
+  letter-spacing: normal;
+}
+
+.sneaker__info {
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  color: #EEEDF0;
+  margin-bottom: 114px;
+  position: relative;
+  z-index: 100;
+}
+
+.sneaker__sneaker {
+  width: 600px;
+  height: 260px;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  -webkit-transform: translate(-50%, -50%) rotateZ(-30deg);
+          transform: translate(-50%, -50%) rotateZ(-30deg);
+}
+
+.sneaker__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../img/sneaker-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sneaker__color {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  opacity: 0.15;
+  -webkit-filter: blur(150px);
+          filter: blur(150px);
+}
+
+.sneaker__color--purple {
+  background-color: #6C72CB;
+}
+
+.sneaker__color--pink {
+  background-color: #CB69C1;
+}
+
+.separator {
+  width: 150px;
+  height: 10px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 25px;
+  background-color: #CB69C1;
+}
