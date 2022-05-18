@@ -94,11 +94,19 @@ h6 {
   font-weight: 400;
 }
 
+*,
+*::before,
+*::after {
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #EEEDF0;
+  background-color: #17181F;
 }
 
 .container {
@@ -112,6 +120,13 @@ h1 {
   font-size: 76px;
   font-weight: 700;
   color: #EEEDF0;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: rgba(238, 237, 240, 0.9);
 }
 
 .nav__list {
@@ -288,4 +303,89 @@ h1 {
   display: block;
   border-radius: 25px;
   background-color: #CB69C1;
+}
+
+.second {
+  position: relative;
+  margin-bottom: 158px;
+}
+
+.second__top {
+  margin-bottom: 114px;
+  background: url(../img/bg/bg-1.svg) center bottom/contain no-repeat, url(../img/bg/bg-2.svg) center bottom/contain no-repeat, url(../img/bg/bg-3.svg) center bottom/contain no-repeat, url(../img/bg/bg-4.svg) center bottom/contain no-repeat, url(../img/bg/bg-5.svg) center bottom/contain no-repeat, #6C72CB;
+}
+
+.second__container {
+  min-height: 690px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 27px 0 50px;
+}
+
+.second__link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px;
+  font-weight: 500;
+  color: rgba(238, 237, 240, 0.9);
+  text-align: right;
+  padding-right: 114px;
+  position: relative;
+}
+
+.second__link::after {
+  content: '';
+  width: 85px;
+  height: 85px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url(../img/arrow.svg) center/15px 25px no-repeat, #17181F;
+  border-radius: 50%;
+}
+
+.second__sneaker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.second__img {
+  width: 560px;
+  height: 240px;
+  background-image: url(../img/sneaker-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-50deg);
+          transform: translate(-50%, -50%) rotate(-50deg);
+}
+
+.second__bg-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 220px;
+  font-weight: 900;
+  color: rgba(238, 237, 240, 0.6);
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
