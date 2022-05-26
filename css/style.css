@@ -390,6 +390,10 @@ h2 {
           transform: translate(-50%, -50%);
 }
 
+.catalog {
+  margin-bottom: 136px;
+}
+
 .catalog__cards {
   margin-bottom: 60px;
 }
@@ -512,4 +516,110 @@ h2 {
 .slider__item:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+.footer {
+  min-height: 570px;
+  background: url(../img/footer/bg/bg5.svg) bottom/contain no-repeat, url(../img/footer/bg/bg4.svg) bottom/contain no-repeat, url(../img/footer/bg/bg3.svg) bottom/contain no-repeat, url(../img/footer/bg/bg2.svg) bottom/contain no-repeat, url(../img/footer/bg/bg1.svg) bottom/contain no-repeat;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 1300px;
+}
+
+.footer__item {
+  width: 25%;
+}
+
+.link-box__item {
+  margin-bottom: 10px;
+}
+
+.link-box__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.link-box__link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #EEEDF0;
+  text-transform: uppercase;
+}
+
+.links > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.links__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #EEEDF0;
+  text-transform: uppercase;
+}
+
+.links__link {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #CB69C1;
+}
+
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.media__item {
+  border-radius: 50%;
+  background-image: radial-gradient(#CB69C1, #6C72CB);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.media__item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.media__link {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.media__link--facebook {
+  background-image: url(../img/footer/facebook-icon.svg);
+}
+
+.media__link--twitter {
+  background-image: url(../img/footer/twitter-icon.svg);
+}
+
+.media__link--youtube {
+  background-image: url(../img/footer/yt-icon.svg);
+}
+
+.media__link--instagram {
+  background-image: url(../img/footer/instagram-icon.svg);
 }

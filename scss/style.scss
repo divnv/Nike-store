@@ -12,6 +12,7 @@ $White: #fff;
 $Black: #000;
 
 $PrimaryGradient: linear-gradient(45deg, $Purple, $Pink);
+$RadialGradient: radial-gradient($Pink, $Purple);
 
 $PrimaryTransition: all .4s ease;
 $SecondaryTransition: all .2s ease;
@@ -378,6 +379,8 @@ h2 {
 
 .catalog {
 
+	margin-bottom: 136px;
+
 	&__container {}
 
 	&__cards {
@@ -504,5 +507,134 @@ h2 {
 			transform: scale(1.5);
 		}
 
+	}
+}
+
+// == Footer ==
+
+.footer {
+	min-height: 570px;
+
+	background:	url(../img/footer/bg/bg5.svg) bottom / contain no-repeat,
+					url(../img/footer/bg/bg4.svg) bottom / contain no-repeat,
+					url(../img/footer/bg/bg3.svg) bottom / contain no-repeat,
+					url(../img/footer/bg/bg2.svg) bottom / contain no-repeat,
+					url(../img/footer/bg/bg1.svg) bottom / contain no-repeat;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+
+
+		max-width: 1300px;
+	}
+
+	&__item {
+		width: 25%;
+	}
+	
+	&__link-box {}
+}
+
+
+.link-box {
+	
+	&__item {
+		margin-bottom: 10px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	
+	&__link {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 18px;
+		font-weight: 800;
+		letter-spacing: 1px;
+		color: $Light;
+		text-transform: uppercase;
+	}
+}
+
+.links {
+
+	& > *:not(:last-child) {
+		margin-bottom: 10px;
+	}
+
+	&__title {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 18px;
+		font-weight: 800;
+		letter-spacing: 1px;
+		color: $Light;
+		text-transform: uppercase;
+	}
+
+	&__item {}
+
+	&__link {
+		font-family: 'Lato', sans-serif;
+		font-size: 16px;
+		font-weight: 800;
+		letter-spacing: 1px;
+		color: $Pink;
+	}
+}
+
+.help {
+
+	&__links {}
+}
+
+.about {
+
+	&__links {}
+}
+
+.media {
+	display: flex;
+	justify-content: space-between;
+
+	&__item {
+		border-radius: 50%;
+
+		background-image:$RadialGradient;
+
+		transition: $SecondaryTransition;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+	}
+
+	&__link {
+		display: block;
+
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+
+		background-position: center;
+		background-repeat: no-repeat;
+
+		&--facebook {
+			background-image: url(../img/footer/facebook-icon.svg);
+		}
+
+		&--twitter {
+			background-image: url(../img/footer/twitter-icon.svg);
+		}
+
+		&--youtube {
+			background-image: url(../img/footer/yt-icon.svg);
+		}
+
+		&--instagram {
+			background-image: url(../img/footer/instagram-icon.svg);
+		}
 	}
 }
