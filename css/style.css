@@ -97,8 +97,8 @@ h6 {
 *,
 *::before,
 *::after {
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 body {
@@ -388,4 +388,128 @@ h2 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.catalog__cards {
+  margin-bottom: 60px;
+}
+
+.catalog__slider {
+  margin-bottom: 114px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards__item {
+  width: 400px;
+  height: 400px;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #6C72CB, #CB69C1);
+  text-align: center;
+}
+
+.cards__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.cards__link:hover .cards__img {
+  -webkit-transform: scale(1.2) rotate(-40deg);
+          transform: scale(1.2) rotate(-40deg);
+}
+
+.cards__link:hover .cards__titile {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.cards__img {
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.cards__img--first {
+  background-image: url(../img/cards/sneaker-1.png);
+}
+
+.cards__img--second {
+  background-image: url(../img/cards/sneaker-2.png);
+}
+
+.cards__img--third {
+  background-image: url(../img/cards/sneaker-3.png);
+}
+
+.cards__titile {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.cards__price {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider__item {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background-color: #CB69C1;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.slider__item--active {
+  background-color: #6C72CB;
+}
+
+.slider__item:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.slider__item:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
