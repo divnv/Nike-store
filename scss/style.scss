@@ -37,6 +37,15 @@ body {
 	color: $Light;
 
 	background-color: $Dark;
+
+	&::-webkit-scrollbar-thumb{
+		border-radius: 10px;
+		background-image: $PrimaryGradient;
+	}
+
+	&::-webkit-scrollbar{
+		width: 8px;
+	}
 }
 
 .container {
